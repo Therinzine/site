@@ -16,9 +16,6 @@ Our goal for this project is to be able to create a fully autonomous, life sized
 ### Hardware
 We are currently working on developing all 32 pieces for the game, as well as manufacturing the chess board ourselves. Navigate to our [hardware docs]({% link wiki/wizards-chess/hardware.md %}) to understand where we are at in terms of our hardware progress.
 
-#### Battery Team
-The batteries team has been researching what types of batteries we need to power the robot as well as how to do it. Their mission is to successfully provide the amount of power to allow a full game of chess to run without needing any recharges. Currently, the upper bound that they have set for one full game is 2 hours.
-
 #### CAD
 The CAD team is utilizing Fusion 360 to create a model of the basic chess piece. They are also our go-to team for laser cutting, 3D printing, CNCing, and general manufacturing, especially when it comes to needing certain files.
 
@@ -31,23 +28,24 @@ This team is tasked with figuring out how to capture the position of all pieces 
 #### Voice Recognition
 This team is tasked with implementing full voice recognition capabilities for the chess game. They are looking into different voice recognition libraries that will be the best to implement in order to assist the creation of the software needed. The voice recognition software will take different commands (ie: Knight to e4) and use the trajectory planner to convert them to a point on the plane for the piece to move to.
 
+#### Controls
+This team is tasked with determining how to control the robots using wifi to play the chess game. The pieces will have to move according to the commands given from voice recognition and be able to adjust their path should they veer off course. 
+
 ## What have we been up to?
 
-### Spring 2021
+### Spring 2023 
 
-This spring was our first semester on this project! 
-
-- Designed the triangular chess pieces
-  - Each robot is about 9.75" x 7.75" and laser cut from .5" plywood and each square on the field is 1.5' by 1.5'
+- Made more robots!
+  - We now have 8 fully functional robots
   
 <img src="images/WC-prototype1.jpg" alt="Chess Piece Prototype" width="400"/>
 
-- Put together prototype with motor movement
+- Started designing camera set up for computer vision
 
 {{< drive-player "18uXqdxGblfsNUdoEI2qEVPu5-sYCvQ7a/preview" >}}
 
-- Wrote chess algorithm using Python
-- Simulated robot movement in ROS 
+- Wrote code to allow robots to communicate with computer over wifi and send commands
+- Scanned april tags to disguish between pieces and orientation
 
 ## Plans for the Future
 
